@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.card-container {
+    border: 1px solid black;
+}
+
+.card {
+    border: 1px solid grey;
+}

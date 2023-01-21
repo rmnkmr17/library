@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,26 @@
     <script src="script.js" defer></script>
     <title>Library</title>
 </head>
+
 <body>
+    <h1>Library</h1>
+    <button class="new-book">NEW BOOK</button>
+    <dialog class="modal">
+        <form id="form" action="" method="dialog">
+            <label for="name">Name: </label>
+            <input type="text" id="name">
+            <label for="author">Author: </label>
+            <input type="text" id="author">
+            <label for="pages">Number of Pages: </label>
+            <input type="text" id="pages">
+            <label for="read">Have you read it? </label>
+            <input type="checkbox" id="read">
+            <button class="add">ADD</button>
+            <button class="close">Close</button>
+        </form>
+    </dialog>
     <div class="card-container"></div>
+
 </body>
+
 </html>

@@ -28,6 +28,13 @@ const displayBooks = () => {
     card.classList.add("card");
     cardContainer.append(card);
     
+    // delete button
+    const deleteButton = document.createElement("button");
+    deleteButton.setAttribute("data-index", myLibrary.indexOf(book));
+    deleteButton.classList.add("delete")
+    deleteButton.textContent = "X";
+    card.append(deleteButton);
+    deleteButton.addEventListener("click", deleteBookFromLibrary);
     for (let key in book) {
       let para = document.createElement("p");
       para.classList.add(`${key}`)
@@ -35,12 +42,6 @@ const displayBooks = () => {
       card.append(para);
     }
 
-    // delete button
-    const deleteButton = document.createElement("button");
-    deleteButton.setAttribute("data-index", myLibrary.indexOf(book));
-    deleteButton.textContent = "Delete";
-    card.append(deleteButton);
-    deleteButton.addEventListener("click", deleteBookFromLibrary);
     
     // change status
     let changeStatusButton = document.createElement("button");
